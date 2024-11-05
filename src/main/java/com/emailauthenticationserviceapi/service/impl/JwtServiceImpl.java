@@ -38,7 +38,12 @@ public class JwtServiceImpl implements JwtService {
 
     @Override
     public Claims getClaims(String token) {
-        return null;
+
+        return Jwts.parserBuilder()
+                .setSigningKey(this.secretToken)
+                .build()
+                .parseClaimsJws(token)
+                .getBody();
     }
 
     @Override
