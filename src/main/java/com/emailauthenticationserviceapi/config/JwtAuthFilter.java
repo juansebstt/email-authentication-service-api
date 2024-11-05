@@ -19,6 +19,7 @@ import java.util.Optional;
 
 @Component
 public class JwtAuthFilter extends OncePerRequestFilter {
+
     private final JwtService jwtService;
     private final UserRepository userRepository;
 
