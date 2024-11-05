@@ -17,7 +17,12 @@ public class UserRequest {
     @NotBlank
     @NotNull
     @Schema
-    private String name;
+    private String firstName;
+
+    @NotBlank
+    @NotNull
+    @Schema
+    private String lastName;
 
     @NotBlank
     @NotNull
