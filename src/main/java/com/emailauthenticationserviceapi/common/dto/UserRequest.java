@@ -28,5 +28,5 @@ public class UserRequest {
     @NotNull
     @Schema
     private String password;
-    
+
 }
